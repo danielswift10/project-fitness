@@ -3,10 +3,15 @@
 import styles from "@/style"
 import { logo } from "@/Assets"
 import { Links } from "@/Constants"
+import Link from "@/Components/Navbar/Links";
+import { SelectedPage } from "@/Types/types";
 
-// type Props = {};
+type Props = {
+selectedPage: SelectedPage;
+setSelectedPage: (value: SelectedPage) => void;
+}
 
-export const Navbar = () => {
+const Navbar = ({setSelectedPage, selectedPage}: Props) => {
   return ( 
     <nav>
         <div 
@@ -18,13 +23,22 @@ export const Navbar = () => {
 
                     <div className={`${styles.flexBetween} gap-8 text-sm w-full`}>
                         <div className="links flex flex-row">
-                            {
+                            {/* {
                                 Links.map((item, index) => (
-                                    <ul key={index}>
-                                        <li className="border">{item.title}</li>
-                                    </ul>
+                                   <Link
+                                   key={index}
+                                   page={item.title}
+                                   selectedPage={selectedPage}
+                                   setSelectedPage={setSelectedPage}
+
+                                   />
                                 ))
-                            }
+                            } */}
+                            <Link
+                                page={"Home"}
+                                selectedPage={selectedPage}
+                                setSelectedPage={setSelectedPage}
+                            />
                         </div>
                         <div className={`${styles.flexBetween} gap-8`}>
                             <button>Sign In</button>
@@ -38,3 +52,6 @@ export const Navbar = () => {
     </nav>
   )
 }
+
+
+export default Navbar;

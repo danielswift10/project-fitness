@@ -1,18 +1,18 @@
 export const Links = [
     {
-        id:1,
+        id:"home",
         title: "Home",
     },
     {
-        id:2,
+        id:"benefits",
         title: "Benefits",
     },
     {
-        id:3,
+        id:"our-classes",
         title: "Our Classes",
     },
     {
-        id:4,
+        id:"contact-us",
         title: "Contact-us",
     },
 ]
