@@ -10,14 +10,14 @@ export const Navbar = () => {
   return ( 
     <nav>
         <div 
-        className={`${styles.flexBetween} border bg-[red] fixed top-0 z-30 w-full py-6 `}
+        className={`${styles.flexBetween} border fixed top-0 z-30 w-full py-6 `}
         >
-            <div className={`${styles.flexBetween} mx-auto `}>
+            <div className={`${styles.flexBetween} border w-full mx-auto `}>
                 <div className={`${styles.flexBetween} flex-row `}>
                     <img src={logo} alt="logo " className=""/>
 
                     <div className={`${styles.flexBetween} gap-8 text-sm w-full`}>
-                        <div className="linksi">
+                        <div className="links flex flex-row">
                             {
                                 Links.map((item, index) => (
                                     <ul key={index}>
