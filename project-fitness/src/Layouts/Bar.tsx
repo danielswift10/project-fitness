@@ -1,18 +1,16 @@
-// import { useState } from "react"
-// import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid"
-import styles from "@/style"
-import { logo } from "@/Assets"
+import { logo } from "@/Assets";
 import Link from "@/Components/Navbar/Links";
-import { SelectedPage } from "@/Types/types";
-
-type Props = {
-selectedPage: SelectedPage;
-setSelectedPage: (value: SelectedPage) => void;
+import styles from "@/style";
+type Props{
+    page: string;
+    selectedPage: string;
+    setSelectedPage: (value: string) => void;
 }
 
-const Navbar = ({setSelectedPage, selectedPage}: Props) => {
-  return ( 
-    <nav>
+
+const Bar = ({page, selectedPage, setSelectedPage}: Props) => {
+    return (
+      <nav>
         <div 
         className={`${styles.flexBetween} border fixed top-0 z-30 w-full py-6 `}
         >
@@ -34,9 +32,9 @@ const Navbar = ({setSelectedPage, selectedPage}: Props) => {
                                 ))
                             } */}
                             <Link
-                                page="Home"
-                                selectedPage={selectedPage}
-                                setSelectedPage={setSelectedPage}
+                            page="Home"
+                            selectedPage={selectedPage}
+                            setSelectedPage={setSelectedPage}
                             />
                         </div>
                         <div className={`${styles.flexBetween} gap-8`}>
@@ -48,9 +46,8 @@ const Navbar = ({setSelectedPage, selectedPage}: Props) => {
                 </div>
             </div>
         </div>
-    </nav>
-  )
+      </nav>
+      );
 }
-
-
-export default Navbar;
+ 
+export default Bar;
