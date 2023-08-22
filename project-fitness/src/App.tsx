@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Navbar } from "./Layouts";
-import { Benefits, Hero, OurClasses, Partners, Testimonial } from "./Components";
+import { Benefits, ContactUs, Hero, OurClasses, Partners, Testimonial } from "./Components";
 
 const App = () => {
   const [isTopOfPage, setIsTopOfPage] = useState<boolean>(true);
@@ -23,6 +23,7 @@ const App = () => {
       <Benefits/>
       <Testimonial/>
       <OurClasses/>
+      <ContactUs/>
     </div>
   );
 }
