@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Navbar } from "./Layouts";
-import { Hero } from "./Components";
+import { Hero, Partners } from "./Components";
 
 const App = () => {
   const [isTopOfPage, setIsTopOfPage] = useState<boolean>(true);
@@ -19,6 +19,7 @@ const App = () => {
     <div className="app bg-gray-20">
       <Navbar isTopOfPage={isTopOfPage}/>
       <Hero/>
+      <Partners/>
     </div>
   );
 }

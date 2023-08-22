@@ -32,8 +32,6 @@ const Hero = () => {
                     />
                 </div>
             </div>
-
-
             <div className="image">
                 <img src={homePageGraphic} alt="" />
             </div>
