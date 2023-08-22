@@ -1,4 +1,3 @@
-
 const styles  = {
     boxWidth: "xl:max-w-[1280px] w-full  mx-auto",
 
@@ -36,7 +35,7 @@ const styles  = {
 
     marginX: "sm:mx-16 mx-6",
     marginY: "sm:my-16 my-6",
-    image: "transition duration-150 ease-out hover:ease-in  hover:scale-[1.01] object-cover cursor-pointer"
+    image: "transition duration-150 ease-out hover:ease-in  hover:scale-[1.03] object-cover cursor-pointer"
 }
 
  
