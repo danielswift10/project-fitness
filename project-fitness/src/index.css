@@ -14,3 +14,7 @@
     -webkit-tap-highlight-color: transparent;
     font-family: "DM Sans", sans-serif;
   }
+
+  body{
+    background-color: #F8F4EB;
+  }
