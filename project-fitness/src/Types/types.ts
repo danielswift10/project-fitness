@@ -3,3 +3,10 @@ export interface BenefitArrayType {
     title: string;
     description: string;
   }
+
+
+  export interface ClassType {
+    name: string;
+    description?: string;
+    image: string;
+  }

@@ -30,7 +30,7 @@ const Navbar = ({isTopOfPage} : NavbarProps) => {
                         {
                             Links.map((link, index) =>(
                                 <li key={index}
-                                className="text-primary-500 font-dmsans hover:text-primary-300 transition duration-500"
+                                className="cursor-pointer text-primary-500 font-dmsans hover:text-primary-300 transition duration-500"
                                 >{link.title}</li>
                             ))
                         }

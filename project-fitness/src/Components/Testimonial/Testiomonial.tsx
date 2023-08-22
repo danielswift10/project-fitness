@@ -9,13 +9,14 @@ const Testimonial = () => {
             className={`bg-white  `}
         >
             <div className={` ${styles.paddingX} ${styles.boxWidth} flex flex-col md:flex-row items-center justify-between gap-20 md:pt-28 pt-16`}>
-                <div className="image border border-black  w-full">
-                    <img className="mx-auto" src={benefitPageGraphic} alt="" />
+                <div className="image ">
+                    <img className="mx-auto w-full " src={benefitPageGraphic} alt="" />
                 </div>
-                <div className="description border border-black">
+
+                <div className="text md:basis-3/5">
                     <div className="relative">
-                        <div 
-                        className="before:absolute before:-top-20 before:-left-20 before:z-[1] before:content-abstractwaves"
+                        <div
+                            className="before:absolute before:-top-20 before:-left-20 before:z-[1] before:content-abstractwaves"
                         >
                             <Text>
                                 MILLIONS OF HAPPY MEMBERS GETTING{" "}
@@ -35,14 +36,14 @@ const Testimonial = () => {
                                 facilisi. Amet semper tortor facilisis metus nibh. Rhoncus sit
                                 enim mattis odio in risus nunc.
                             </p>
-                            <div className="relative mt-12">
-                            <div className="before:absolute before:-bottom-20 before:right-40 before:z-[-1] before:content-sparkles">
-                                <Button
-                        type="button"
-                        className={`rounded-md bg-secondary-500 px-6 py-3 hover:bg-primary-500 hover:text-white`}
-                        title="Join Now"
-                        onClick={() => console.log("button clicked")}
-                    />
+                            <div className="relative my-8">
+                                <div className="before:absolute before:-bottom-20 before:right-40 before:z-[-1] before:content-sparkles">
+                                    <Button
+                                        type="button"
+                                        className={`rounded-md bg-secondary-500 px-6 py-3 hover:bg-primary-500 hover:text-white`}
+                                        title="Join Now"
+                                        onClick={() => console.log("button clicked")}
+                                    />
                                 </div>
                             </div>
                         </div>
