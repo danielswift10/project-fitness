@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Navbar } from "./Layouts";
+import { Footer, Navbar } from "./Layouts";
 import { Benefits, ContactUs, Hero, OurClasses, Partners, Testimonial } from "./Components";
 
 const App = () => {
@@ -15,17 +15,18 @@ const App = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  return (  
+  return (
     <div className="app bg-gray-20">
-      <Navbar isTopOfPage={isTopOfPage}/>
-      <Hero/>
-      <Partners/>
-      <Benefits/>
-      <Testimonial/>
-      <OurClasses/>
-      <ContactUs/>
+      <Navbar isTopOfPage={isTopOfPage} />
+      <Hero />
+      <Partners />
+      <Benefits />
+      <Testimonial />
+      <OurClasses />
+      <ContactUs />
+      <Footer />
     </div>
   );
 }
- 
+
 export default App;
