@@ -36,7 +36,7 @@ const Navbar = ({ isTopOfPage }: NavbarProps) => {
             className={` ${navbarBackground} fixed top-0 mx-auto w-full z-30 `}
         >
             <div
-                className={`${styles.boxWidth} w-[80%] md:w-[90%] mx-auto ${styles.flexBetween} py-5    `}
+                className={`${styles.boxWidth} w-4/5 md:w-[90%] mx-auto ${styles.flexBetween} py-5    `}
             >
                 <div className="nav-logo ">
                     <img src={logo} alt=""
