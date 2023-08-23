@@ -62,7 +62,7 @@ const ContactUs = () => {
                         />
                         <Button
                             type="submit"
-                            className="mt-1 font-semibold rounded-lg bg-secondary-500 px-20 py-3 transition duration-500 hover:text-white"
+                            className={`mt-1 font-semibold rounded-lg bg-secondary-500 px-20 py-3 transition duration-200 ${styles.image}`}
                             title="Submit"
                             onClick={() => console.log("button clicked")}
                         />

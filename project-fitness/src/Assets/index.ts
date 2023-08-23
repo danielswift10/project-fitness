@@ -19,7 +19,11 @@ import sponsorFortune from "./images/SponsorFortune.png"
 import sponsorRedBull from "./images/SponsorRedBull.png"
 
 
+//ICONS
+import arrowUp from "./icons/arrow-up.png"
+
 export {
+    arrowUp,
     abstractWaves,
     arrow,
     benefitPageGraphic,

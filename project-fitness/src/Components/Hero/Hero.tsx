@@ -7,8 +7,8 @@ import { motion } from "framer-motion";
 const Hero = () => {
     return (
         <section id="home"
-            className={`${styles.boxWidth} ${styles.paddingX} ${layout.section1} items-center justify-center   mt-32  `}>
-            <div className="text md:basis-3/5 z-10">
+            className={`${styles.boxWidth} ${styles.paddingX}  pt-32 ss:mt-38 md:mt-0 ${layout.section1} items-center justify-center    `}>
+            <div className="text md:basis-3/5 z-10 ">
                 <motion.div
                  initial="hidden"
                  whileInView="visible"
@@ -20,7 +20,7 @@ const Hero = () => {
                  }}
                 >
                 <div className="relative">
-                    <div className="before:absolute before:-top-20 before:-left-20 before:z-[-1] md:before:content-evolvetext">
+                    <div className="before:absolute before:-top-20 before:-left-20 before:z-[-2] md:before:content-evolvetext">
                         <img src={homePageText} alt="" />
                     </div>
                 </div>
@@ -42,18 +42,21 @@ const Hero = () => {
                 className={` flex gap-[33px] mt-8`}>
                     <Button
                         type="button"
-                        className={`rounded-md bg-secondary-500 px-6 py-3 hover:bg-primary-500 hover:text-white`}
+                        className={`rounded-md bg-secondary-500 px-6 py-3 font-semibold font-dmsans ${styles.image}`}
                         title="Join Now"
                         onClick={() => console.log("button clicked")}
                     />
                     <Button
                         type="button"
-                        className={`text-sm font-bold text-primary-500 underline hover:text-secondary-500`}
+                        className={`text- font-bold text-primary-500 underline hover:no-underline`}
                         title="Learn more"
                         onClick={() => console.log("button clicked")}
                     />
                 </motion.div>
             </div>
+            
+            <div className="image md:z-10 ">
+            
             <motion.div
              initial="hidden"
              whileInView="visible"
@@ -64,10 +67,10 @@ const Hero = () => {
                visible: { opacity: 1, x: 0 },
              }}
             >
-            <div className="image md:z-10 ">
                 <img src={homePageGraphic} alt="" />
+                </motion.div>
             </div>
-            </motion.div>
+            
         </section>
     );
 }

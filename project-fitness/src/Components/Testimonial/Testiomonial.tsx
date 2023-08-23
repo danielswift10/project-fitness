@@ -74,12 +74,12 @@ const Testimonial = () => {
                                 <div className="before:absolute before:-bottom-20 before:right-40 before:z-[1] before:content-sparkles">
                                     <Button
                                         type="button"
-                                        className={`rounded-md font-semibold bg-secondary-500 px-6 py-3 hover:bg-primary-500 hover:text-white`}
+                                        className={`rounded-md font-semibold bg-secondary-500 px-6 py-3  ${styles.image}`}
                                         title="Join Now"
                                         onClick={() => console.log("button clicked")}
                                     />
                                 </div>
-                            </motion.div>
+                            </motion.div>   
                         </div>
                     </div>
                 </div>

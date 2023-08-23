@@ -36,7 +36,7 @@ const BenefitsInfo: Array<BenefitArrayType> = [
 const Benefits = () => {
     return (
         <section id="benefits" className={` ${styles.paddingX} bg-white`}>
-            <div className={` py-20 ${styles.boxWidth}`}>
+            <div className={` py-24 ${styles.boxWidth}`}>
                 <motion.div 
                  initial="hidden"
                  whileInView="visible"

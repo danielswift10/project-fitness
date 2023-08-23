@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { Footer, Navbar } from "./Layouts";
 import { Benefits, ContactUs, Hero, OurClasses, Partners, Testimonial } from "./Components";
+import ScrollToTop from "./Components/ScrollToTop";
 
 const App = () => {
   const [isTopOfPage, setIsTopOfPage] = useState<boolean>(true);
@@ -25,6 +26,7 @@ const App = () => {
       <OurClasses />
       <ContactUs />
       <Footer />
+      <ScrollToTop/>
     </div>
   );
 }

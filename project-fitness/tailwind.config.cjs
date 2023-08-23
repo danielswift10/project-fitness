@@ -13,6 +13,7 @@ export default  {
         "primary-500": "#FF6B66",
         "secondary-400": "#FFCD5B",
         "secondary-500": "#FFC132",
+        veryDimBlue: "#8A89A0",
       },
       backgroundImage: (theme) => ({
         "gradient-yellowred":

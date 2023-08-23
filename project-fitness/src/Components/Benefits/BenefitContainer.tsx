@@ -1,4 +1,5 @@
 import Button from "@/Utils/Button";
+import styles from "@/styles";
 
 type BenefitProps ={
     icon: JSX.Element;
@@ -9,7 +10,7 @@ type BenefitProps ={
 
 const BenefitContainer = ({icon, title, description}: BenefitProps) => {
     return ( 
-        <div className="rounded-md border-2  border-gray-100 py-14 px-5 w-[320px] md:w-[330px] lg:w-[350px]  text-center mt-7">
+        <div className={`rounded-md border-2  border-gray-100 py-14 px-5 w-[320px] md:w-[330px] lg:w-[350px]  text-center mt-7 ${styles.image} `}>
             <div className="flex justify-center items-center flex-col gap-4">
             <div className="rounded-full border-2 border-gray-100  w-fit bg-primary-100 p-4">
                 {icon}

@@ -6,21 +6,6 @@ const styles  = {
     heading3: "font-changa font-normal w-full font-normal sm:text-[58px] text-black xl:tracking-[-2.16px] ",
     heading4: "font-pt font-bold leading-[32px] md:text-[20px] text-[16px] sm:text-[18px] ",
 
-    paragraph: "font-pt font-normal text-[16px] leading-[28px] lg:text-[18px] lg:leading-[28px] xl:text-[20px] xl:leading-[32px]",
-    paragraph1: "font-pt font-bold text-[20px] text-black",
-    paragraph2: "font-pt text-[16px] ",
-    paragraph3: "font-pt font-normal text-[14px] ",
-    sub: "font-pt text-[14px] font-normal text-veryDimBlue leading-[18px] sm:text-[15px]  lg:leading-[24px] xl:text-[16px] ",
-
-    
-    
-    link: "font-bold font-pt text-[24px] ",
-    
-
-
-
-    textLink: "font-pt text-black font-bold text-[20px] ",
-
     flexCenter: "flex justify-center items-center",
     flexStart: "flex justify-center items-start",
     flexBetween: "flex justify-between items-center",
