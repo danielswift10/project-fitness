@@ -15,11 +15,6 @@ export default  {
         "secondary-500": "#FFC132",
         veryDimBlue: "#8A89A0",
       },
-      backgroundImage: (theme) => ({
-        "gradient-yellowred":
-          "linear-gradient(90deg, #FF616A 0%, #FFC837 100%)",
-        "mobile-home": "url('./Assets/HomePageGraphic.png')",
-      }),
       fontFamily: {
         dmsans: ["DM Sans", "sans-serif"],
         montserrat: ["Montserrat", "sans-serif"],

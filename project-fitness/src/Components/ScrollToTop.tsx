@@ -7,6 +7,7 @@ const ScrollToTop = () => {
      // show text on hover
 	const [showBTT, setShowBTT] = useState<boolean>(false);
 	const handleMouseOver = () => {
+		showBTT
 		setShowBTT(true);
 	}
 	const handleMouseOut = () => {
