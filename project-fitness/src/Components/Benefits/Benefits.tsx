@@ -1,10 +1,18 @@
-import { BenefitArrayType, BenefitType } from "@/Types/types";
+import { BenefitArrayType } from "@/Types/types";
 import Text from "@/Utils/Text";
 import styles from "@/styles";
 import { AcademicCapIcon, HomeModernIcon, UserGroupIcon } from "@heroicons/react/24/outline";
 import BenefitContainer from "./BenefitContainer";
+import { motion } from "framer-motion";
 
-const BenefitsInfo: Array<BenefitType> = [
+const container = {
+    hidden: {},
+    visible: {
+      transition: { staggerChildren: 0.2 },
+    },
+  };
+
+const BenefitsInfo: Array<BenefitArrayType> = [
     {
       icon: <HomeModernIcon className="h-6 w-6" />,
       title: "State of the Art Facilities",
@@ -29,7 +37,16 @@ const Benefits = () => {
     return (
         <section id="benefits" className={` ${styles.paddingX} bg-white`}>
             <div className={` py-20 ${styles.boxWidth}`}>
-                <div className="header">
+                <motion.div 
+                 initial="hidden"
+                 whileInView="visible"
+                 viewport={{ once: true, amount: 0.5 }}
+                 transition={{ duration: 0.5 }}
+                 variants={{
+                   hidden: { opacity: 0, x: -50 },
+                   visible: { opacity: 1, x: 0 },
+                 }}
+                className="header">
                     <Text>
                         MORE THAN JUST GYM.
                     </Text>
@@ -38,8 +55,13 @@ const Benefits = () => {
                         get you to your ultimate fitness goals with ease. We provide true
                         care into each and every member.
                     </p>
-                </div>
-                <div className="benefit-info flex-wrap flex items-center gap-8 justify-center  ">
+                </motion.div>
+                <motion.div
+                   initial="hidden"
+                   whileInView="visible"
+                   viewport={{ once: true, amount: 0.5 }}
+                   variants={container}
+                className="benefit-info flex-wrap flex items-center gap-8 justify-center  ">
                     {
                         BenefitsInfo.map((benefit: BenefitArrayType) => (
                             <BenefitContainer
@@ -50,7 +72,7 @@ const Benefits = () => {
                             />
                         ))
                     }
-                </div>
+                </motion.div>
             </div>
         </section>
     );

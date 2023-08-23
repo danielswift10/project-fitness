@@ -3,6 +3,8 @@ import ClassContainer from "./ClassContainer";
 import { ClassType } from "@/Types/types";
 import { image1, image2, image3, image4, image5, image6 } from "@/Assets";
 import styles from "@/styles";
+import { motion } from "framer-motion";
+
 
 const classes: Array<ClassType> = [
     {
@@ -42,8 +44,18 @@ const classes: Array<ClassType> = [
 
 const OurClasses = () => {
     return (
-        <section className="bg-primary-100 py-40" id="our-classes">
+        <section className="bg-primary-100 py-28" id="our-classes">
            <div className={`${styles.boxWidth} ${styles.paddingX}`}>
+           <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.5 }}
+            transition={{ duration: 0.5 }}
+            variants={{
+              hidden: { opacity: 0, x: -50 },
+              visible: { opacity: 1, x: 0 },
+            }}
+           >
            <div className="md:w-3/5">
                 <Text>
                     OUR CLASSES
@@ -55,6 +67,7 @@ const OurClasses = () => {
                     enim mattis odio in risus nunc.
                 </p>
             </div>
+           </motion.div>
             <div className="mt-10 h-[353px] w-full overflow-x-auto overflow-y-hidden">
             <ul className="w-[2800px] whitespace-nowrap">
                     {

@@ -1,12 +1,24 @@
 import { homePageGraphic, homePageText } from "@/Assets";
 import Button from "@/Utils/Button";
 import styles, { layout } from "@/styles";
+import { motion } from "framer-motion";
+
 
 const Hero = () => {
     return (
         <section id="home"
             className={`${styles.boxWidth} ${styles.paddingX} ${layout.section1} items-center justify-center   mt-32  `}>
-            <div className="text md:basis-3/5">
+            <div className="text md:basis-3/5 z-10">
+                <motion.div
+                 initial="hidden"
+                 whileInView="visible"
+                 viewport={{ once: true, amount: 0.5 }}
+                 transition={{ duration: 0.5 }}
+                 variants={{
+                   hidden: { opacity: 0, x: -50 },
+                   visible: { opacity: 1, x: 0 },
+                 }}
+                >
                 <div className="relative">
                     <div className="before:absolute before:-top-20 before:-left-20 before:z-[-1] md:before:content-evolvetext">
                         <img src={homePageText} alt="" />
@@ -17,7 +29,17 @@ const Hero = () => {
                     Studios to get the Body Shapes That you Dream of.. Get Your Dream
                     Body Now.
                 </p>
-                <div className={` flex gap-[33px] mt-8`}>
+                </motion.div>
+                <motion.div
+                 initial="hidden"
+                 whileInView="visible"
+                 viewport={{ once: true, amount: 0.5 }}
+                 transition={{ delay: 0.2, duration: 0.5 }}
+                 variants={{
+                   hidden: { opacity: 0, x: -50 },
+                   visible: { opacity: 1, x: 0 },
+                 }}
+                className={` flex gap-[33px] mt-8`}>
                     <Button
                         type="button"
                         className={`rounded-md bg-secondary-500 px-6 py-3 hover:bg-primary-500 hover:text-white`}
@@ -30,11 +52,22 @@ const Hero = () => {
                         title="Learn more"
                         onClick={() => console.log("button clicked")}
                     />
-                </div>
+                </motion.div>
             </div>
-            <div className="image">
+            <motion.div
+             initial="hidden"
+             whileInView="visible"
+             viewport={{ once: true, amount: 0.5 }}
+             transition={{ delay: 0.2, duration: 0.5 }}
+             variants={{
+               hidden: { opacity: 0, x: -50 },
+               visible: { opacity: 1, x: 0 },
+             }}
+            >
+            <div className="image md:z-10 ">
                 <img src={homePageGraphic} alt="" />
             </div>
+            </motion.div>
         </section>
     );
 }
