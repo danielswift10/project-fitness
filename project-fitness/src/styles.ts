@@ -13,7 +13,7 @@ const styles  = {
 
  
 export const layout = {
-    section1: `flex md:flex-row flex-col`,
+    section1: `flex md:flex-row flex-col`,  
     section2: `flex lg:flex-row flex-col`,
     sectionCol: `flex flex-col`,
 }

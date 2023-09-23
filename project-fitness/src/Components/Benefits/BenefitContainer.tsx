@@ -2,7 +2,7 @@ import Button from "@/Utils/Button";
 import styles from "@/styles";
 
 type BenefitProps ={
-    icon: JSX.Element;
+    icon?: JSX.Element,
     title: string;
     description: string;
 }

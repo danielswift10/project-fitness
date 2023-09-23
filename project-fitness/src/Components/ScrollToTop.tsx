@@ -14,7 +14,6 @@ const ScrollToTop = () => {
 		setShowBTT(false);
 	}
 
-	// add scroll to top feature
 	const [displayArrow, setDisplayArrow] = useState(false);
 
 	const scrollUp = () => {
